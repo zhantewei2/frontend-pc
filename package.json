@@ -3,22 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "comment": "node comment/build.js",
+    "webfont": "node comment/webfont.js",
+    "dev": "npm run comment dev && vue-cli-service serve",
+    "test": "npm run comment test && vue-cli-service build",
+    "prod": "npm run comment prod && vue-cli-service prod",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "cache-ajax": "/myTest/cmTool/cache-ajax",
     "core-js": "^2.6.5",
+    "element-ui": "^2.12.0",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webfont": "^9.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-typescript": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
+    "chalk": "^2.4.2",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.4.3",

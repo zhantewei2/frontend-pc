@@ -1,0 +1,40 @@
+{
+    //项目名
+    "projectName": "销售2.0-PC",
+    //项目配置文件位置
+    "configFilePath": "src/config/config.ts",
+    // index.html位置
+    "indexFilePath": "public/index.html",
+    //config 对应config.ts 变量
+    //baseUrl html中 <base href>
+  
+    "envs": {
+      "dev": {
+        "envName": "开发环境",
+        "baseUrl": "/",
+        "config": {
+          "hostPath": "",
+          "usePrefix": true,
+          "isDev": true
+        }
+      },
+      "test": {
+        "envName": "测试环境",
+        "baseUrl": "/",
+        "config": {
+          "hostPath": "http://106.12.202.175:4300",
+          "userPrefix": true,
+          "isDev": false
+        }
+      },
+      "prod": {
+        "envName": "生产环境",
+        "baseUrl": "/",
+        "config": {
+          "hostPath": "http://106.12.202.175:5300",
+          "userPrefix": true,
+          "isDev": false
+        }
+      }
+    }
+  }
